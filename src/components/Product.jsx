@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { CartContext } from "../store/CartContext,jsx";
+import { CartContext } from "../store/CartContext.jsx";
 
 export default function Product({
   id,
@@ -9,7 +9,7 @@ export default function Product({
   description,
 }) {
   const { onAddItemToCart } = useContext(CartContext)
-  
+
   return (
     <article className="product">
       <img src={image} alt={title} />
